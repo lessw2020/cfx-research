@@ -1,0 +1,3 @@
+# ninja log v5
+0	53778	1713627326327877123	/data/users/less/local/cfx-research/cutlass_gemm/cutlass_gemm/build/temp.linux-x86_64-cpython-310/cutlass_gemm.o	6def6dcfd7516c10
+11	79526	1713627559744187022	/data/users/less/local/cfx-research/cutlass_gemm/cutlass_gemm/build/temp.linux-x86_64-cpython-310/cutlass_gemm.o	af1105d74d6a21c8
