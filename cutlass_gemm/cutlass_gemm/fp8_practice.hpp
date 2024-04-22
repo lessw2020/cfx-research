@@ -73,4 +73,17 @@ using GemmKernel = cutlass::gemm::kernel::GemmUniversal<
 >;
 
 using Gemm = cutlass::gemm::device::GemmUniversalAdapter<GemmKernel>;
+
+//Extract information from Gemm kernel.
+using EpilogueOutputOp = typename Gemm::EpilogueOutputOp;
+using ElementScalar = typename EpilogueOutputOp::ElementScalar;
+using ElementAmax = typename EpilogueOutputOp::ElementAmax;
+using ActivationFunctor = typename EpilogueOutputOp::ActivationFn;
+
+using StrideA = typename Gemm::GemmKernel::StrideA;
+using StrideB = typename Gemm::GemmKernel::StrideB;
+using StrideC = typename Gemm::GemmKernel::StrideC;
+using StrideD = typename Gemm::GemmKernel::StrideD;
+using StrideAux = StrideD;
+
 // ------
